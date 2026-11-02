@@ -1,24 +1,24 @@
 export default function Hero() {
 	return (
-		<section id="home" className="relative min-h-screen flex items-center justify-center px-6">
+		<section id="home" className="relative min-h-screen flex items-center justify-center px-6 pt-32 md:pt-0">
 			<div className="max-w-3xl mx-auto text-center space-y-8">
 				
-				{/* Bagian I AM - Diberi garis di kiri kanan biar seimbang */}
+				{/* Bagian PORTOFOLIO */}
 				<div className="flex items-center justify-center gap-4 text-[#2a0a0d]/60 dark:text-white/60 transition-colors">
-					<div className="h-px w-12 bg-current"></div>
-					<span className="font-serif-luxury text-2xl italic tracking-wider">PORTOFOLIO</span>
-					<div className="h-px w-12 bg-current"></div>
+					<div className="h-px w-8 md:w-12 bg-current"></div>
+					<span className="font-serif-luxury text-xl md:text-2xl italic tracking-wider">PORTOFOLIO</span>
+					<div className="h-px w-8 md:w-12 bg-current"></div>
 				</div>
 
-				{/* Judul Utama - Ukuran disesuaikan biar gak melar */}
-				<h1 className="font-serif-luxury text-5xl sm:text-6xl md:text-7xl font-bold leading-[1.1] text-[#2a0a0d] dark:text-white transition-colors">
+				{/* Judul Utama - Diperkecil buat HP */}
+				<h1 className="font-serif-luxury text-4xl sm:text-6xl md:text-7xl font-bold leading-[1.1] text-[#2a0a0d] dark:text-white transition-colors">
 					<span className="text-transparent bg-clip-text bg-gradient-to-r from-[#ff6b81] to-[#2a0a0d] dark:from-[#ff9a9e] dark:to-[#ff6b81]">
 						Menghidupkan Ide Lewat Kode
 					</span>
 				</h1>
 
-				{/* Deskripsi - Dibuat lebih manis */}
-				<p className="text-sm md:text-base font-medium tracking-[0.2em] uppercase text-[#ff6b81] pt-2 pb-6">
+				{/* Deskripsi */}
+				<p className="text-xs md:text-base font-medium tracking-[0.2em] uppercase text-[#ff6b81] pt-2 pb-6">
 					Informatika • Web Dev • Terus Belajar
 				</p>
 
