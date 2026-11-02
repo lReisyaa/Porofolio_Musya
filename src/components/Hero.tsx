@@ -57,7 +57,7 @@ export default function Navbar() {
 						{theme === 'dark' ? '☀️' : '🌙'}
 					</button>
 					<a href="#contact" className="flex items-center gap-2 border border-black/30 dark:border-white/30 rounded-full px-6 py-2 text-xs tracking-widest text-[#2a0a0d] dark:text-white hover:bg-[#2a0a0d] hover:text-white dark:hover:bg-white dark:hover:text-[#140305] transition-all">
-						LET&apos;S TALK <span>→</span>
+						HUBUNGI SAYA <span>→</span>
 					</a>
 				</div>
 
