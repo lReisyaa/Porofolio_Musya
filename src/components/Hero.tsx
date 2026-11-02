@@ -1,93 +1,32 @@
-'use client';
-
-import { useState, useEffect } from 'react';
-
-export default function Navbar() {
-	const [theme, setTheme] = useState<string | null>(null);
-	const [isOpen, setIsOpen] = useState(false); // State untuk buka-tutup menu HP
-
-	useEffect(() => {
-		const storedTheme = window.localStorage.getItem('theme') || 'light';
-		if (storedTheme === 'dark') {
-			document.documentElement.classList.add('dark');
-			setTheme('dark');
-		} else {
-			document.documentElement.classList.remove('dark');
-			setTheme('light');
-		}
-	}, []);
-
-	const toggleTheme = () => {
-		if (theme === 'dark') {
-			document.documentElement.classList.remove('dark');
-			window.localStorage.setItem('theme', 'light');
-			setTheme('light');
-		} else {
-			document.documentElement.classList.add('dark');
-			window.localStorage.setItem('theme', 'dark');
-			setTheme('dark');
-		}
-	};
-
-	const toggleMenu = () => setIsOpen(!isOpen);
-	const closeMenu = () => setIsOpen(false);
-
+export default function Hero() {
 	return (
-		<nav className="absolute top-0 w-full z-50 px-6 py-6 border-b border-black/10 dark:border-white/10 transition-colors">
-			<div className="max-w-7xl mx-auto flex items-center justify-between">
+		<section id="home" className="relative min-h-screen flex items-center justify-center px-6 pt-32 md:pt-0">
+			<div className="max-w-3xl mx-auto text-center space-y-8">
 				
-				{/* Logo */}
-				<div className="font-serif-luxury text-2xl tracking-widest font-bold text-[#2a0a0d] dark:text-white">
-					MOSYAROFAH
-					<span className="text-[10px] md:text-xs block tracking-widest text-[#ff6b81] font-sans font-normal mt-1">WEB DEVELOPER</span>
-				</div>
-				
-				{/* Menu Desktop (Laptop) */}
-				<div className="hidden md:flex items-center gap-8 text-xs font-semibold tracking-widest text-[#2a0a0d] dark:text-white/80">
-					<a href="#home" className="hover:text-[#ff6b81] transition-colors">HOME</a>
-					<a href="#about" className="hover:text-[#ff6b81] transition-colors">ABOUT</a>
-					<a href="#skills" className="hover:text-[#ff6b81] transition-colors">SKILLS</a>
-					<a href="#projects" className="hover:text-[#ff6b81] transition-colors">PROJECTS</a>
-					<a href="#contact" className="hover:text-[#ff6b81] transition-colors">CONTACT</a>
+				<div className="flex items-center justify-center gap-4 text-[#2a0a0d]/60 dark:text-white/60 transition-colors">
+					<div className="h-px w-8 md:w-12 bg-current"></div>
+					<span className="font-serif-luxury text-xl md:text-2xl italic tracking-wider">PORTOFOLIO</span>
+					<div className="h-px w-8 md:w-12 bg-current"></div>
 				</div>
 
-				{/* Tombol Kanan Desktop */}
-				<div className="hidden md:flex items-center gap-4">
-					<button onClick={toggleTheme} className="p-2 rounded-full hover:bg-black/5 dark:hover:bg-white/10 transition-colors">
-						{theme === 'dark' ? '☀️' : '🌙'}
-					</button>
-					<a href="#contact" className="flex items-center gap-2 border border-black/30 dark:border-white/30 rounded-full px-6 py-2 text-xs tracking-widest text-[#2a0a0d] dark:text-white hover:bg-[#2a0a0d] hover:text-white dark:hover:bg-white dark:hover:text-[#140305] transition-all">
-						HUBUNGI SAYA <span>→</span>
+				<h1 className="font-serif-luxury text-4xl sm:text-6xl md:text-7xl font-bold leading-[1.1] text-[#2a0a0d] dark:text-white transition-colors">
+					<span className="text-transparent bg-clip-text bg-gradient-to-r from-[#ff6b81] to-[#2a0a0d] dark:from-[#ff9a9e] dark:to-[#ff6b81]">
+						Menghidupkan Ide Lewat Kode
+					</span>
+				</h1>
+
+				<p className="text-xs md:text-base font-medium tracking-[0.2em] uppercase text-[#ff6b81] pt-2 pb-6">
+					Informatika • Web Dev • Terus Belajar
+				</p>
+
+				<div>
+					<a href="#projects" className="inline-flex items-center gap-3 bg-[#2a0a0d] dark:bg-white text-white dark:text-[#2a0a0d] rounded-full px-8 py-3.5 text-xs font-bold tracking-widest hover:bg-[#ff6b81] dark:hover:bg-[#ff6b81] hover:text-white dark:hover:text-white transition-all duration-300">
+						VIEW MY WORK
+						<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
 					</a>
 				</div>
 
-				{/* Tombol Menu HP (Hamburger) */}
-				<div className="flex md:hidden items-center gap-4">
-					<button onClick={toggleTheme} className="p-2 rounded-full hover:bg-black/5 dark:hover:bg-white/10 transition-colors">
-						{theme === 'dark' ? '☀️' : '🌙'}
-					</button>
-					<button onClick={toggleMenu} className="p-2 text-[#2a0a0d] dark:text-white">
-						{/* Ikon 3 Garis / Silang */}
-						{isOpen ? (
-							<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M18 6 6 18M6 6l12 12"/></svg>
-						) : (
-							<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M3 12h18M3 6h18M3 18h18"/></svg>
-						)}
-					</button>
-				</div>
-
 			</div>
-
-			{/* Dropdown Menu HP (Muncul kalau 3 garis diklik) */}
-			{isOpen && (
-				<div className="md:hidden absolute top-full left-0 w-full bg-white dark:bg-[#1a1a1a] border-b border-black/10 dark:border-white/10 shadow-xl py-4 px-6 flex flex-col gap-4 text-sm font-semibold tracking-widest text-[#2a0a0d] dark:text-white">
-					<a href="#home" onClick={closeMenu} className="hover:text-[#ff6b81] transition-colors">HOME</a>
-					<a href="#about" onClick={closeMenu} className="hover:text-[#ff6b81] transition-colors">ABOUT</a>
-					<a href="#skills" onClick={closeMenu} className="hover:text-[#ff6b81] transition-colors">SKILLS</a>
-					<a href="#projects" onClick={closeMenu} className="hover:text-[#ff6b81] transition-colors">PROJECTS</a>
-					<a href="#contact" onClick={closeMenu} className="hover:text-[#ff6b81] transition-colors">CONTACT</a>
-				</div>
-			)}
-		</nav>
+		</section>
 	);
 }
