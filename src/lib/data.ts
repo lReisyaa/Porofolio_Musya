@@ -8,8 +8,7 @@ export const profile = {
 	instagram: 'https://instagram.com/syavandaa__', 
 	linkedin: 'https://www.linkedin.com/in/mosya-rofah-9a08b4328',
 	about: [
-		'Saya Mosyarofah, mahasiswa Teknik Informatika yang memiliki ketertarikan besar pada pengembangan perangkat lunak, khususnya Web Development. Saya percaya bahwa website yang baik bukan hanya soal fungsi, tetapi juga bagaimana ia memberikan pengalaman yang nyaman bagi penggunanya.',
-		'Perjalanan saya dimulai dari mempelajari logika pemrograman dasar menggunakan C++, yang melatih saya berpikir terstruktur. Seiring waktu, saya mulai mendalami pengembangan web dari nol dengan menguasai HTML, CSS, dan JavaScript. Saat ini, saya terus mengeksplorasi ekosistem frontend modern seperti React dan Next.js untuk membangun antarmuka web yang interaktif dan responsif.',
+		'Saya Mosyarofah, mahasiswa Teknik Informatika yang memiliki ketertarikan besar pada pengembangan perangkat lunak, khususnya Web Development. Saya percaya bahwa website yang baik bukan hanya soal fungsi, tetapi juga bagaimana ia memberikan pengalaman yang nyaman bagi penggunanya. Perjalanan saya dimulai dari mempelajari logika pemrograman dasar menggunakan C++, yang melatih saya berpikir terstruktur. Seiring waktu, saya mulai mendalami pengembangan web dari nol dengan menguasai HTML, CSS, dan JavaScript. Saat ini, saya terus mengeksplorasi ekosistem frontend modern seperti React dan Next.js untuk membangun antarmuka web yang interaktif dan responsif.',
 	],
 };
 
@@ -29,7 +28,7 @@ const repo = (name: string) => `https://github.com/${GITHUB_USER}/${name}`;
 
 export const projects: Project[] = [
 	{
-		title: 'JotunColor Landing Page',
+		title: 'Jotunc Color Landing Page',
 		description: 'Website landing page resmi untuk PT Distrindo Pratama Sejahtera. Menampilkan katalog cat, kalkulator kebutuhan, dan fitur cek stok.',
 		tags: ['HTML, CSS, Javasript'],
 		url: 'https://github.com/lReisyaa/project_web_jotun',
