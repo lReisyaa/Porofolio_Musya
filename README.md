@@ -4,7 +4,8 @@ Selamat datang di repository portofolio pribadi saya! Website ini dibuat sebagai
 
 ## Preview Portofolio
 
-![Preview Portofolio](./screenshots/portofolio-preview.jpg)
+![Preview Portofolio](./screenshots/portofolio-preview1.jpg)
+![Preview Portofolio](./screenshots/portofolio-preview2.jpg)
 
 ## Tentang Project Ini
 
