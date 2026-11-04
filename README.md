@@ -1,36 +1,44 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Mosyarofah | Personal Web Portfolio
 
-## Getting Started
+Selamat datang di repository portofolio pribadi saya! Website ini dibuat sebagai wadah untuk menampilkan profil, keahlian, pengalaman, serta project yang telah saya kerjakan selama menempuh studi di Teknik Informatika.
 
-First, run the development server:
+## Preview Portofolio
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+![Preview Portofolio](./screenshots/portofolio-preview.jpg)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Tentang Project Ini
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Portofolio ini didesain dengan gaya **Editorial/Luxury** yang memadukan tipografi elegan (Serif) dengan skema warna gelap (Dark Mode) dan aksen warna Rose/Merah. Tujuannya adalah untuk memberikan kesan profesional, modern, dan berbeda dari template portofolio pada umumnya.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Teknologi yang Digunakan
 
-## Learn More
+Website ini dibangun menggunakan tech stack modern:
 
-To learn more about Next.js, take a look at the following resources:
+- **Framework:** [Next.js 15](https://nextjs.org/) (React.js)
+- **Bahasa:** [TypeScript](https://www.typescriptlang.org/)
+- **Styling:** [Tailwind CSS v4](https://tailwindcss.com/)
+- **Animasi:** Custom React `IntersectionObserver` (Scroll Reveal)
+- **Ikon:** [Simple Icons](https://simpleicons.org/)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Fitur Utama
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- **Desain Editorial/Luxury:** Tampilan minimalis dengan perpaduan font Serif dan Sans-Serif.
+- **Dark & Light Mode:** Fitur ganti tema yang tersimpan secara otomatis di localStorage browser.
+- **Fully Responsive:** Nyaman dibuka di layar HP, Tablet, maupun Desktop.
+- **Scroll Animations:** Efek transisi halus saat pengunjung melakukan scroll.
+- **Real Projects Showcase:** Menampilkan screenshot asli dari project yang telah dikerjakan.
 
-## Deploy on Vercel
+## Struktur Folder
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```text
+Porofolio_Musya/
+├── public/              # Aset statis (gambar, favicon, dll)
+├── screenshots/         # Gambar preview untuk README
+├── src/
+│   ├── app/             # Halaman utama Next.js (App Router)
+│   ├── components/      # Komponen UI (Navbar, Hero, About, dll)
+│   └── lib/             # Data statis (data.ts)
+├── package.json
+├── tailwind.config.ts
+├── tsconfig.json
+└── README.md
