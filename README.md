@@ -2,10 +2,15 @@
 
 Selamat datang di repository portofolio pribadi saya! Website ini dibuat sebagai wadah untuk menampilkan profil, keahlian, pengalaman, serta project yang telah saya kerjakan selama menempuh studi di Teknik Informatika.
 
+## Live Demo
+
+Kamu bisa melihat website portofolio ini secara langsung melalui link berikut:
+[Mosyarofah Portfolio - Vercel]([https://mosyarofah.vercel.app/])
+
 ## Preview Portofolio
 
-![Preview Portofolio](./screenshots/portofolio-preview1.jpg)
-![Preview Portofolio](./screenshots/portofolio-preview2.jpg)
+![Preview Portofolio 1](./screenshots/portofolio-preview1.jpg)
+![Preview Portofolio 2](./screenshots/portofolio-preview2.jpg)
 
 ## Tentang Project Ini
 
