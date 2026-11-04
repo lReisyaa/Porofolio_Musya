@@ -5,7 +5,7 @@ Selamat datang di repository portofolio pribadi saya! Website ini dibuat sebagai
 ## Live Demo
 
 Kamu bisa melihat website portofolio ini secara langsung melalui link berikut:
-[Mosyarofah Portfolio - Vercel]([https://mosyarofah.vercel.app/])
+[Mosyarofah Portfolio - Vercel](https://mosyarofah.vercel.app/)
 
 ## Preview Portofolio
 
